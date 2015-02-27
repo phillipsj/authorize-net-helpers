@@ -8,6 +8,7 @@ Direct Post Method (DPM) so I can use it directly in a view instead of trying to
 
 You use it just like the Html.BeginForm and inside the brackets you can build your HTML.
 
+```csharp
 	@using (Html.BeginDirectPostForm("ApiLogin", "TransactionKey", 2.25M, "https://YOUR_RELAY_RESPONSE_URL", true))
 	{
 	    <p>
@@ -38,6 +39,7 @@ You use it just like the Html.BeginForm and inside the brackets you can build yo
 	        <input type='submit' class='submit' value='Order with DPM!' />
 	    </p>
 	}
+```
 
 ## License
 
